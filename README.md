@@ -1,3 +1,1 @@
 # dsgtTeam
-
-![Uploading image.png…]()
