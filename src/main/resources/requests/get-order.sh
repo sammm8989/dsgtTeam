@@ -1,1 +1,1 @@
-curl -X GET localhost:8080/rest/orders -H 'Content-type:application/json'
+curl -X GET localhost:7070/rest/orders -H 'Content-type:application/json'
