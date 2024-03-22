@@ -17,3 +17,7 @@ dsgt2024Brazil
 ### Japan
 ssh azureuser@dsgt2024team13.japaneast.cloudapp.azure.com
 dsgt2024Japan
+
+## PORTS
+SOAP: 8081
+REST: 7070
