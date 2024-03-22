@@ -1,0 +1,10 @@
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/exceptions/MealNotFoundAdvice.java
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/exceptions/NoMealsException.java
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/FoodRestServiceApplication.java
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/domain/MealsRepository.java
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/exceptions/MealNotFoundException.java
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/domain/MealOrder.java
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/controllers/MealsRestRpcStyleController.java
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/controllers/MealsRestController.java
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/domain/MealType.java
+/home/jens/Documents/school/dapp_project/src/main/java/be/kuleuven/foodrestservice/domain/Meal.java
