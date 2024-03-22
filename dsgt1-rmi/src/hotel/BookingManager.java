@@ -2,9 +2,7 @@ package hotel;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class BookingManager implements Manager {
 
@@ -16,7 +14,7 @@ public class BookingManager implements Manager {
 
 	public Set<Integer> getAllRooms() {
 		Set<Integer> allRooms = new HashSet<Integer>();
-		Iterable<Room> roomIterator = Arrays.asList(rooms);
+		Room[] roomIterator = rooms;
 		for (Room room : roomIterator) {
 			allRooms.add(room.getRoomNumber());
 		}
@@ -25,22 +23,46 @@ public class BookingManager implements Manager {
 
 	public boolean isRoomAvailable(Integer roomNumber, LocalDate date) {
 		//implement this method
-		for (int i=0; i < rooms.length; i++) {
-			Room room = rooms[i];
-			if (room.getRoomNumber() == roomNumber) {
-
+		for (Room room : rooms) {
+			if (roomNumber.equals(room.getRoomNumber())) {
+				List<BookingDetail> bookings = room.getBookings();
+				for (BookingDetail booking : bookings) {
+					if (date.equals(booking.getDate())) {
+						return false;
+					}
+				}
 			}
 		}
-		return false;
+
+		return true;
 	}
 
 	public void addBooking(BookingDetail bookingDetail) {
 		//implement this method
+		LocalDate date = bookingDetail.getDate();
+		int number = bookingDetail.getRoomNumber();
+		if(isRoomAvailable(number,date)){
+			for (Room room: rooms){
+				if (room.getRoomNumber().equals(number)){
+					List<BookingDetail> bookings = room.getBookings();
+					bookings.add(bookingDetail);
+					room.setBookings(bookings);
+				}
+
+			}
+		}
 	}
+
 
 	public Set<Integer> getAvailableRooms(LocalDate date) {
 		//implement this method
-		return null;
+		Set<Integer> available = new HashSet<>();
+		for(Room room: rooms){
+			if (isRoomAvailable(room.getRoomNumber(), date)){
+				available.add(room.getRoomNumber());
+			}
+		}
+		return available;
 	}
 
 	private static Room[] initializeRooms() {
