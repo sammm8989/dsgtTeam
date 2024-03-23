@@ -10,7 +10,7 @@ public class client {
 
     public static void main(String[] args) {
         try {
-            Registry registry = LocateRegistry.getRegistry(null);
+            Registry registry = LocateRegistry.getRegistry(args[0]);
             Manager stub = (Manager)registry.lookup("Manager");
             new BookingClient(stub);
         } catch(Exception e) {
