@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="482724f7-736a-48ee-ba25-2326b5c605bc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/delete-meal-rest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/delete-meal-rest.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/delete-meal-restrpc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/delete-meal-restrpc.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/delete-order-rest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/delete-order-rest.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/delete-order-restrpc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/delete-order-restrpc.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/get-order.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/get-order.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/new-meal-rest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/new-meal-rest.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/new-meal-restrpc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/new-meal-restrpc.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/new-order-rest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/new-order-rest.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/new-order-restrpc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/new-order-restrpc.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/update-meal-rest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/update-meal-rest.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/update-meal-restrpc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/update-meal-restrpc.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/update-order-restrpc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/update-order-restrpc.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/requests/update-order.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/requests/update-order.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/food-rest-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/food-rest-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/food-rest-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/food-rest-service-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+    <list default="true" id="482724f7-736a-48ee-ba25-2326b5c605bc" name="Changes" comment="add ports">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +25,12 @@
   &quot;prStates&quot;: []
 }</component>
   <component name="GitLabMergeRequestsSettings">{}</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sammm8989/dsgtTeam.git",
-    "accountId": "2c1499a8-7511-4c6a-8a46-9de74c30bb6e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sammm8989/dsgtTeam.git&quot;,
+    &quot;accountId&quot;: &quot;2c1499a8-7511-4c6a-8a46-9de74c30bb6e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -54,14 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "rest",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/jens/Documents/school/dapp_project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;rest&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jens/Documents/school/dapp_project&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
