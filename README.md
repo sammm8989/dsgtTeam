@@ -29,7 +29,7 @@ ssh azureuser@dsgt.canadacentral.cloudapp.azure.com
 dsgt2024Canada
 
 ### Brazilië
-ssh asureuser@dsgt.brazilsouth.cloudapp.azure.com
+ssh azureuser@dsgt.brazilsouth.cloudapp.azure.com
 dsgt2024Brazil
 
 ### Japan
