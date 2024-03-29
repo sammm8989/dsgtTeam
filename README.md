@@ -41,5 +41,3 @@ SOAP: 8081
 REST: 7070
 RMI: 1099
 RMI RESPOND: 9090
-
-test commit
