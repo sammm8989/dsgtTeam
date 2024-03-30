@@ -37,7 +37,20 @@ ssh azureuser@dsgt2024team13.japaneast.cloudapp.azure.com
 dsgt2024Japan
 
 ## PORTS
-SOAP: 8081
-REST: 7070
-RMI: 1099
+SOAP: 8081  
+REST: 7070  
+RMI: 1099  
 RMI RESPOND: 9090
+
+## Screens
+
+screen -dmS REST java -jar REST.jar --server.port=7070  
+killall screen
+
+## COMMANDS
+- screen -ls &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;see all running screens
+- screen -r 1395.soap &emsp;&emsp;open a screen
+- Ctrl+A+D &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;exit a screen
+- screen -XS 1395.soap quit &emsp;&emsp;&ensp;quit a screen
+- screen -S Sam &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;create a screen named Sam with a random ID
+- ./UK.sh &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; run the script to create all the screens
