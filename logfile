@@ -1,0 +1,6 @@
+Seq	Host	Starttime	JobRuntime	Send	Receive	Exitval	Signal	Command
+4	:	1711711521.210	   135.608	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 4
+1	:	1711711521.205	   135.614	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 1
+2	:	1711711521.206	   135.613	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 2
+3	:	1711711521.208	   135.614	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 3
+5	:	1711711521.212	   135.611	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 5

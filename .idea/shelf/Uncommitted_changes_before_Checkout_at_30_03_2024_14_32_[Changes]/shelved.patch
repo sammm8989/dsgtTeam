@@ -1,0 +1,46 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># dsgtTeam\n\n![when-server-down-iceeramen](https://github.com/sammm8989/dsgtTeam/assets/100788554/3bce5a48-b448-445b-8fbe-fd9a0562edf3)\n\n## Easy deployment with sh file\n\n- Run the .sh file in the apis folder -> that is all :)\n\n## Deployment:\n\n- Copy the apis folder to the server\n- Start a screen session for every api\n- For SOAP and REST start the api by \"java -jar SOAP.jar --server.port=8081\" and \"java -jar REST.jar --server.port=7070\"\n- For the RMI start rmiregistry with \"rmiregistry &\" in the same console run \"java -Djava.rmi.server.hostname=dsgt.uksouth.cloudapp.azure.com server\"\n\n## Testing\n- For RMI: run in folder testing \"java client dsgt.uksouth.cloudapp.azure.com\"\n- For REST: curl -X GET dsgt.uksouth.cloudapp.azure.com:7070/restrpc/meals -H 'Content-type:application/json'\n- For SOAP: run in folder testing \"curl --header \"content-type: text/xml\" -d @request.xml http://dsgt.uksouth.cloudapp.azure.com:8081/ws\"\n\n\n## SERVERS:\n### UK\nssh azureresource@dsgt.uksouth.cloudapp.azure.com\ndsgt2024UKSouth\n\n### Canada\nssh azureuser@dsgt.canadacentral.cloudapp.azure.com\ndsgt2024Canada\n\n### Brazilië\nssh azureuser@dsgt.brazilsouth.cloudapp.azure.com\ndsgt2024Brazil\n\n### Japan\nssh azureuser@dsgt2024team13.japaneast.cloudapp.azure.com\ndsgt2024Japan\n\n## PORTS\nSOAP: 8081\nREST: 7070\nRMI: 1099\nRMI RESPOND: 9090\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision 3025b2d36f1fda6a55e4c02172b88ce9889649b9)
++++ b/README.md	(date 1711708434097)
+@@ -40,4 +40,4 @@
+ SOAP: 8081
+ REST: 7070
+ RMI: 1099
+-RMI RESPOND: 9090
++RMI RESPOND: 9090
+\ No newline at end of file
+Index: testing/basic_parallel.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/testing/basic_parallel.sh b/testing/basic_parallel.sh
+new file mode 100755
+--- /dev/null	(date 1711803683745)
++++ b/testing/basic_parallel.sh	(date 1711803683745)
+@@ -0,0 +1,2 @@
++seq 10000 | xargs -n 1 -P 5000 -I {} \
++curl --header "content-type: text/xml" -d @request.xml http://dsgt2024team13.japaneast.cloudapp.azure.com:8081/ws
+\ No newline at end of file
+Index: logfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/logfile b/logfile
+new file mode 100644
+--- /dev/null	(date 1711711656821)
++++ b/logfile	(date 1711711656821)
+@@ -0,0 +1,6 @@
++Seq	Host	Starttime	JobRuntime	Send	Receive	Exitval	Signal	Command
++4	:	1711711521.210	   135.608	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 4
++1	:	1711711521.205	   135.614	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 1
++2	:	1711711521.206	   135.613	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 2
++3	:	1711711521.208	   135.614	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 3
++5	:	1711711521.212	   135.611	0	535	28	0	curl --header 'Content-type:application/json' -X GET 'http://dsgt2024team13.japaneast.cloudapp.azure.com:7070/restrpc/meals' 5
