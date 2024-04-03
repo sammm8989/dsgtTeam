@@ -1,1 +1,5 @@
-ab -n 10000 -c 50 -g SOAP/japan_50_10000_v2.tsv -p request.xml -T "text/xml" -m GET http://dsgt2024team13.japaneast.cloudapp.azure.com:8081/ws
+start_time_20=$(date +"%s")
+ab -n 100000 -c 10 -g SOAP/duration_10.tsv http://dsgt2024team13.japaneast.cloudapp.azure.com:8081/ws
+end_time_20=$(date +"%s")
+duration_20=$((end_time_20 - start_time_20))
+echo "Duration: $duration_20 seconds"
